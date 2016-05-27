@@ -1,0 +1,44 @@
+title = "Send Mail"           # The task title
+version = "0.1.0"             # Current version
+authors = [ "Jarbas" ]        # Array with this task authors
+date = 2016-05-27T13:30:00    # Curren version release date
+categories = "action"         # Action or trigger
+tags = [ "mail" ]             # Easier task search
+min_jarbas_version = "0.1.0"  # Minimum Jarbas version required
+
+# The programming language that this task need
+[[languages]]
+name = "ruby"
+version = "2.3.0"
+
+[[inputs]]
+name = "from"
+type = "mail"
+description = "Contains the sender mail address"
+mandatory = true
+
+[[inputs]]
+name = "password"
+type = "string"
+description = "The sender's password"
+mandatory = true
+
+[[inputs]]
+name = "to"
+type = "mail"
+description = "Receiver's mail address"
+mandatory = true
+
+[[inputs]]
+name = "subject"
+type = "string"
+mandatory = false
+
+[[inputs]]
+name = "body"
+type = "string"
+mandatory = true
+
+[[outputs]]
+name = "status"
+type = "boolean"

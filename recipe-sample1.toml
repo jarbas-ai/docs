@@ -1,0 +1,10 @@
+[sample-trigger]
+id = "jarbas/timer"
+
+[task2]
+id = "jarbas/deleter"
+require = "trigger"
+
+  [task2.config]
+    name = "files"
+    value = [ "/var/tmp/*" ]

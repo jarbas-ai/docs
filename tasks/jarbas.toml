@@ -1,0 +1,47 @@
+title = "Task Title"          # The task title
+version = "0.1.0"             # Current version
+authors = [ "Jarbas" ]        # Array with this task authors
+date = 2016-05-27T13:30:00    # Curren version release date
+categories = "action"         # Action or trigger
+tags = [ "notification" ]     # Easier task search
+min_jarbas_version = "0.1.0"  # Minimum Jarbas version required
+
+# The programming languages that this task need
+# name [ ruby, python, javascript ]
+# version [ string containing the language min version ]
+[[languages]]
+name = "ruby"
+version = "2.3.0"
+
+# name => input identifier
+# type => [ int, float, string, boolean, mail, dir, file, telephone, url ]
+# description => ditto
+# mandatory => true or false
+[[inputs]]
+name = "name"
+type = "string"
+description = "Lorem Ipsum"
+mandatory = true
+
+# To define more then one input just repeat the [[input]] clause
+[[inputs]]
+name = "input 2"
+type = "mail"
+description = "Lorem Ipsum"
+mandatory = true
+
+# Static inputs (configs)
+# Defined when the recipe is written
+[[configs]]
+name = "name"
+type = [ "dir" ]    # When the type is between square brackets an list with the type is expected
+description = "Lorem Ipsum"
+mandatory = true
+
+# name => output identifier
+# type => [ int, float, string, mail, dir, file, telephone, url ]
+# description => ditto
+[[outputs]]
+name = "status"
+type = "boolean"
+description = "desc"

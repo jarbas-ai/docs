@@ -1,7 +1,7 @@
 title = "Task Title"          # The task title
 version = "0.1.0"             # Current version
 authors = [ "Jarbas" ]        # Array with this task authors
-date = 2016-05-27T13:30:00    # Curren version release date
+date = 2016-05-27T13:30:00    # Current version release date
 categories = "action"         # Action or trigger
 tags = [ "notification" ]     # Easier task search
 min_jarbas_version = "0.1.0"  # Minimum Jarbas version required
